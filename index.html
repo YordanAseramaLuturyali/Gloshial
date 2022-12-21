@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gloshial</title>
+    <!-- Logo -->
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon" />
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <style>
+      * {
+        font-family: "Montserrat", sans-serif;
+      }
+      html {
+        scroll-behavior: smooth;
+        position: relative;
+      }
+      .nav-mobile {
+        transition: ease-in-out 2s;
+      }
+      .card-sosmed .card {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div
+      class="container-fluid w-full h-[120px] bg-white flex items-center justify-between lg:justify-start px-10 fixed shadow-lg lg:shadow-none z-40"
+    >
+      <a href="#" class="logo"
+        ><img src="img/logo.png" alt="" class="w-[84px] lg:mr-10"
+      /></a>
+      <nav
+        class="nav-desktop hidden bg-white lg:flex font-semibold z-40"
+        id="nav-desktop"
+      >
+        <ul class="flex items-center text-xl">
+          <li class="mr-[72px] bg-[#3f3f3f] text-white px-5 py-2">
+            <a href="#">Home</a>
+          </li>
+          <li class="mr-[72px] text-[#3f3f3f]">
+            <a href="#about-us">About Us</a>
+          </li>
+          <li class="mr-[72px] text-[#3f3f3f]"><a href="#collection">Collection</a></li>
+          <li class="mr-[72px] text-[#3f3f3f]"><a href="#shop">Shop</a></li>
+        </ul>
+      </nav>
+
+      <button id="button" class="lg:hidden">
+        <div class="w-6 h-[3px] bg-[#F24A72] my-1"></div>
+        <div class="w-6 h-[3px] bg-[#F24A72] my-1"></div>
+        <div class="w-6 h-[3px] bg-[#F24A72] my-1"></div>
+      </button>
+    </div>
+    <nav
+      class="nav-mobile w-[50%] fixed top-0 bottom-0 shadow-xl px-10 py-10 bg-white text-[#3F3F3F] font-semibold -ml-[100%] z-50"
+      id="nav-mobile"
+    >
+      <ul class="">
+        <li class="py-4 hover:text-[#f24a72]">
+          <a href="#">Home</a>
+        </li>
+        <li class="py-4 hover:text-[#f24a72]">
+          <a href="#about-us">About Us</a>
+        </li>
+        <li class="py-4 hover:text-[#f24a72]">
+          <a href="#collection">Collection</a>
+        </li>
+        <li class="py-4 hover:text-[#f24a72]">
+          <a href="#shop">Shop</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Akhir Navbar -->
+    <!-- Hero -->
+    <section
+      class="hero pt-[120px] w-full py-20 px-10 flex flex-col justify-center lg:justify-between lg:flex-row"
+      id="hero"
+    >
+      <div class="description mt-20 relative sm:w-[500px]">
+        <h1
+          class="font-extrabold text-4xl leading-normal text-[#3f3f3f] mb-3 sm:text-6xl 2xl:text-[80px] 2xl:w-[631px]"
+        >
+          NEW RELEASE LOCAL T-SHIRT
+        </h1>
+        <p
+          class="font-medium text-[#3f3f3f] w-[320px] mb-7 sm:text-xl sm:w-[400px] 2xl:text-3xl 2xl:w-[540px]"
+        >
+          We present t-shirts with premium materials and designs at affordable
+          prices
+        </p>
+        <a
+          href="#"
+          class="btn font-semibold bg-[#3f3f3f] text-white py-[12px] px-5 rounded 2xl:py-[18px] 2xl:px-7"
+          >SHOP NOW</a
+        >
+        <img
+          src="img/rectangle.png"
+          alt=""
+          class="w-[180px] sm:w-[300px] 2xl:w-[400px] absolute top-7 right-4 -z-10 sm:right-7 2xl:-right-32 2xl:top-10"
+        />
+      </div>
+      <div class="image">
+        <img src="img/image.png" alt="" class="m-auto" />
+      </div>
+    </section>
+    <!-- Akhir Hero -->
+    <hr style="margin: 0 10%" />
+    <!-- About Us -->
+    <section class="about-us w-full py-20 px-10" id="about-us">
+      <h1
+        class="font-extrabold text-3xl text-[#3f3f3f] mb-6 sm:text-5xl xl:text-6xl"
+      >
+        WHAT IS GLOSHIAL ?
+      </h1>
+      <p class="text-[#3f3f3f] sm:text-lg md:text-xl lg:text-2xl lg:w-[1051px]">
+        <span class="font-bold">Gloshial</span> is a local Indonesian brand that
+        presents contemporary t-shirts with unique and trendy designs for
+        today's teenagers. Gloshial quality is also made from selected fabrics,
+        namely combed cotton, the wearer will feel comfortable. gloshial WILL
+        SELL AT ECONOMIC PRICES THAT ALREADY GET THE CHOICE OF FABRIC AND COOL
+        DESIGN
+      </p>
+    </section>
+    <!-- Akhir About Us -->
+    <hr style="margin: 0 10%" />
+    <!-- Shop -->
+    <section class="shop px-10 pt-7 pb-44" id="shop">
+      <h1
+        class="font-extrabold text-[#3f3f3f] text-3xl mb-20 sm:text-5xl xl:text-6xl"
+      >
+        SHOP
+      </h1>
+      <div class="card-sosmed flex flex-wrap justify-around">
+        <a href="#" class="card text-5xl bg-[#f3f3f3] text-[#f24a72] p-9 mt-4">
+          <iconify-icon icon="ph:instagram-logo-fill" class=""></iconify-icon>
+        </a>
+        <a href="#" class="card text-5xl bg-[#f3f3f3] text-[#f24a72] p-9 mt-4">
+          <iconify-icon icon="simple-icons:shopee"></iconify-icon>
+        </a>
+        <a href="#" class="card text-5xl bg-[#f3f3f3] text-[#f24a72] p-9 mt-4">
+          <iconify-icon icon="ri:whatsapp-fill"></iconify-icon>
+        </a>
+        <a href="#" class="card text-5xl bg-[#f3f3f3] text-[#f24a72] p-9 mt-4">
+          <iconify-icon icon="ion:logo-tiktok"></iconify-icon>
+        </a>
+      </div>
+    </section>
+    <!-- Akhir Shop -->
+    <hr style="margin: 0 10%" />
+    <!-- Collection -->
+    <section class="collection w-full py-20 px-10" id="collection">
+      <h1 class="font-extrabold text-[#3f3f3f] text-3xl mb-20 sm:text-5xl xl:text-6xl">Collection</h1>
+      <div class="card-collection flex flex-wrap justify-center lg:justify-between xl:justify-around">
+        <a href="#" class="card my-4">
+          <img src="img/koleksisatu.png" alt="koleksi">
+        </a>
+        <a href="#" class="card my-4">
+          <img src="img/koleksidua.png" alt="koleksi">
+        </a>
+        <a href="#" class="card my-4">
+          <img src="img/koleksitiga.png" alt="koleksi">
+        </a>
+      </div>
+    </section>
+    <!-- Akhir Collection -->
+    <hr style="margin: 0 10%" />
+    <!-- Feedback -->
+    <section class="feedback w-full py-20 px-10" id="feedback">
+      <h1 class="font-extrabold text-[#3f3f3f] text-3xl mb-3 sm:text-5xl xl:text-6xl">Feedback</h1>
+      <p class="font-medium text-[#3f3f3f] sm:text-lg md:text-xl lg:text-2xl mb-20">GIVE ME YOUR FEEDBACK FOR THE GOOD EXPERIENTS</p>
+      <form action="#">
+        <input type="text" name="feedback" id="feedback" placeholder="your name" class="w-[200px] h-12 bg-[#ECECEC] px-3 rounded outline-none text-[#696969] sm:w-[440px] lg:w-[678px]">
+        <input type="button" value="Send" class="cursor-pointer bg-[#3f3f3f] text-white font-semibold py-3 px-6 rounded">
+      </form>
+    </section>
+    <!-- Akhir Feedback -->
+
+    <!-- JS -->
+    <script src="script.js"></script>
+    <!-- Icons -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  </body>
+</html>
